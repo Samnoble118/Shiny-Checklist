@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shiny Checklist</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+
+<body id="body">
+    
+    <img class = "pokemonLogo" src="Images/1200px-Pokémon_GO_logo.svg.png" alt="Logo of Pokemon Go text">
+
+    <h1 id="h1">Pokemon Go Shiny Checklist</h1>
+
+    <p>Want to be the ultimate Pokemon Go shiny hunter? Use this checklist to help you along your journey to complete your shiny Pokedex!</p>
+
+    <form class="container">
+        <input type="text" placeholder="Add Pokemon" class="todo-input" />
+        <button class="todo-button" type="submit"> 
+            <i class="fas fa-plus square"></i> </button>
+        <div class="select">
+            <select name="todo" class="filter-todo">
+                <option value="all">All</option>
+                <option value="completed">Completed</option>
+                <option value="uncompleted">Uncompleted</option>
+            </select>
+
+        </div>
+    </form>
+        <div class="todo-container">
+            <ul class="todo-list"></ul>
+        </div>
+   
+<div class="pokemonContainer">
+    <img class="shinyPika" src="Images/Shiny Pikachu.gif" alt="A shiny yellow Pokemon named Pikachu">
+    <img class="shinyPika" src="Images/Shiny Bulbasaur.gif" alt="A shiny green leaf pokemon">
+    <img class="shinyPika" src="Images/Shiny Squirle.gif" alt="A shiny blue water pokemon">
+    <img class="shinyPika" src="Images/Shiny Charmander.gif" alt="A shiny orange fire pokemon">
+    <img class="shinyBird" src="Images/Shiny Articuno.gif" alt="A shiny blue ice bird">
+    <img class="shinyBird" src="Images/Shiny Zapdos.gif" alt="A shiny yellow electric bird">
+    <img class="shinyBird" src="Images/Shiny Moltres.gif" alt="A shiny red fire bird">
+</div>
+
+</body>
+
+
+<script src="main.js"></script>
+</html>
