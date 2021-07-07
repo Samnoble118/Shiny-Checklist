@@ -6,25 +6,32 @@
 
 #body {
     background-image: linear-gradient(to bottom right, blue, green);
-    height: 100%;
-    margin: 0;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
 .pokemonLogo {
     width: 200px;
     text-align: center;
+    align-items: center;
+    justify-content: center;
     display: flex;
     margin: auto;
+    display: flex;
 }
 
 #h1 {
     text-align: center;
+    align-items: center;
+    justify-content: center;
     font-family: 'Mate SC', serif;
     font-weight: bold;
-    margin: 30px;
     color: white;
+    display: flex;
+    margin: 30px;
+
 }
 
 p {
@@ -33,14 +40,24 @@ p {
     font-family: 'Mate SC', serif;
     font-weight: bold;
     color: white;
+    display: flex;
+    
 }
 
 .container {
-    width: 100%;
+    width: 100vh;
     display: flex;
     justify-content: center;
     margin: 0;
+    text-align: center;
     align-items: center;
+    justify-content: center;
+}
+@media screen and (max-width: 768px) {
+    .container{
+        height: auto;
+        width: auto;
+    }
 }
 
 .paragraph-styling {
@@ -162,31 +179,29 @@ select{
     color: #e60000;
 }
 
-.shinyPika {
-    width: 80px;
-    margin: 50px 0;
-    text-align: center;
-}
-.shinyPika:hover {
-    width: 150px;
-}
-
-.shinyBird {
-    width: 120px;
-    margin: 50px 0;
-    text-align: center;
-}
-
-.pokemonContainer{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 0 20px;
-}
-
-@media screen and (max-width: 768px) {
-    .shinyBird {
-        display: none;
-    }
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
     
+    padding: 0px;
+    margin: 0px 30px;
+  }
+  .grid-item {
+    border: none;
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+  }
+  @media only screen and (max-width: 600px){
+      .grid-container{
+          display: block;
+      }
+  }
+
+.deximg {
+    width: 30%;
+}
+
+.deximgB {
+    width: 40%;
 }
